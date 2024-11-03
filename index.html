@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de traduction de termes informatiques</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<a href="https://github.com/you" style="position:absolute; top: 0px; left: 0px;">
+    <img decoding="async" width="180" height="180"
+        src="https://github.blog/wp-content/uploads/2008/12/forkme_left_darkblue_121621.png"
+        class="attachment-full size-full" alt="Fork me on GitHub" loading="lazy"></a>
+
+<body>
+    <div class="conteneur-du-jeu">
+        <h1>Devinez la traduction française</h1>
+        <div id="conteneur-mot">
+            <p><span id="mot-anglais">Chargement...</span></p>
+        </div>
+        <input type="text" id="champ-de-saisie" placeholder="Saisissez votre proposition, puis appuyez sur Entrée"
+            aria-label="Champ de saisie pour la traduction">
+        <p id="retour" aria-live="polite"></p>
+        <p id="instructions">
+            Vous avez correctement traduit <span id="score">0</span> mots.<br>
+            Vous pouvez révéler la solution avec <kbd>⌘</kbd> +
+            <kbd>⏎</kbd>.<br>
+            Recharger la page pour changer de mot.
+        </p>
+        <div id="barre-de-chargement">
+            <div id="progression"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
