@@ -30,8 +30,12 @@ function obtenirMotAleatoire() {
 
 // Fonction pour générer une couleur aléatoire
 function genererCouleurAleatoire() {
-    const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
-    return randomColor;
+    const letters = 'BCDEF'.split('');
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * letters.length)];
+    }
+    return color;
 }
 
 // Charger un mot aléatoire
